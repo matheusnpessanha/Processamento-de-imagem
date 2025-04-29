@@ -1,6 +1,6 @@
 # 📦 ImageProcessorPy
 
-Seu primeiro pacote de processamento de imagens em Python — pronto para ser reutilizado e publicado no [PyPI](https://pypi.org/).
+Meu primeiro pacote de processamento de imagens em Python — pronto para ser reutilizado e publicado no [PyPI](https://pypi.org/).
 
 ---
 
