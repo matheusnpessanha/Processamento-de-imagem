@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: image-processing-Package
+Version: 0.0.2
+Summary: Test version - Image processing. This project belongs to Karina Tiemi Kato, Tech Lead, Machine Learning Engineer, Data Scientist Specialist at Take. This package is a demo for simulation of upload on the Test Pypi website, and it's from class of the Bootcamp developer full stack Python. E-mail:karinatkato@gmail.com.
+Home-page: https://github.com/BrenoBelchior/Pacote-de-Processamento-de-Imagens
+Author: Breno Belchior Amaral
+Author-email: Breno Belchior Amaral
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Projeto: Pacote de Processamento de Imagens
+## Autora do Projeto: Karina Kato
+### Aula: Coding Lab PRO - Digital Innovation One
+#### Tecnologia: Python
+#### Data: 27/03/2025
+-----------------------------------------
+### DescriÃ§Ã£o
+O pacote "image_processing_test" Ã© usado para:
+
+- **MÃ³dulo "Processing"**:
+  - CorrespondÃªncia de histograma;
+  - Similaridade estrutural;
+  - Redimensionar imagem;
+
+- **MÃ³dulo "Utils"**:
+  - Ler imagem;
+  - Salvar imagem;
+  - Plotar imagem;
+  - Gerar grÃ¡fico de resultados;
+  - Plotar histograma;
+---------------------------------------------
+## Passo a passo da configuraÃ§Ã£o para hospedar um pacote em Python no ambiente de testes Test PyPI
+
+1. **Instale as Ãºltimas versÃµes de "setuptools" e "wheel"**:
+
+   ```bash
+   py -m pip install --user --upgrade setuptools wheel
+   ```
+
+2. **Certifique-se de que o diretÃ³rio no terminal seja o mesmo do arquivo "setup.py"**:
+
+   ```bash
+   C:\Users\breno\image-processing-package> py setup.py sdist bdist_wheel
+   ```
+
+3. **ApÃ³s a instalaÃ§Ã£o, verifique se as pastas abaixo foram adicionadas ao projeto**:
+   - `build`;
+   - `dist`;
+   - `image_processing_test.egg-info`.
+
+4. **Suba os arquivos para o Test PyPI usando o Twine**:
+
+   ```bash
+   py -m twine upload --repository testpypi dist/*
+   ```
+
+5. **Insira o usuÃ¡rio e senha quando solicitado. ApÃ³s isso, o projeto estarÃ¡ hospedado no Test PyPI.**
+
+### ObservaÃ§Ã£o
+O objetivo aqui nÃ£o Ã© utilizar o projeto da Karina para postar em meu perfil do PyPI pessoal, visto que o projeto Ã© dela. Ainda nÃ£o tenho nenhum projeto prÃ³prio que possa ser utilizado como pacote.
+
+Tenha em mente que o Test PyPI Ã© apenas um ambiente de testes. Para que o projeto esteja disponÃ­vel como um pacote pÃºblico, Ã© necessÃ¡rio hospedÃ¡-lo no site oficial do PyPI.
+----------------------------------------------------
+## InstalaÃ§Ã£o local, apÃ³s hospedagem no Test PyPI
+
+1. **Instale as dependÃªncias**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Instale o pacote**:
+
+   Use o gerenciador de pacotes para instalar o pacote hospedado no Test PyPI:
+
+   ```bash
+   pip install -i https://test.pypi.org/simple/ image-processing-test
+   ```
+
+   Ou instale diretamente:
+
+   ```bash
+   pip install image-processing-test
+   ```
+-------------------------------------------------
+## Como usar em qualquer projeto
+
+```python
+from image_processing_test.processing import combination
+combination.find_difference(image1, image2)
+```
+
+## Autor (quem hospedou o projeto no Test PyPI)
+Breno Belchior Amaral
+
+## LicenÃ§a
+[MIT](https://choosealicense.com/licenses/mit/)
