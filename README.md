@@ -1,28 +1,31 @@
-📦 ImageProcessorPy
-Seu primeiro pacote de processamento de imagens em Python, pronto para ser reutilizado e compartilhado via PyPI.
+# 📦 ImageProcessorPy
 
-🧠 Sobre o projeto
-Este projeto tem como objetivo ensinar como criar, estruturar e publicar seu próprio pacote Python no PyPI (Python Package Index), utilizando como exemplo um módulo de processamento de imagens.
+Seu primeiro pacote de processamento de imagens em Python — pronto para ser reutilizado e publicado no [PyPI](https://pypi.org/).
 
-Você aprenderá:
+---
 
-Como criar um pacote Python do zero;
+## 🧠 Sobre o projeto
 
-Como estruturar o diretório do projeto;
+Neste projeto, você aprenderá a criar seu **primeiro pacote Python** voltado para **processamento de imagens**, com a estrutura correta para publicá-lo no repositório PyPI. A proposta é que você possa reutilizar esse pacote facilmente em outros projetos e compartilhá-lo com outras pessoas da comunidade.
 
-Como empacotar e gerar os arquivos de distribuição;
+Este projeto é guiado por uma especialista que demonstra todo o processo de criação e publicação, além de apresentar um exemplo funcional com código real.
 
-Como subir seu pacote no PyPI;
+---
 
-E como reutilizá-lo em qualquer projeto com pip install.
+## 🖼 Funcionalidades do pacote
 
-🖼️ Funcionalidades do pacote
-O pacote de exemplo inclui funcionalidades básicas de processamento de imagens, como:
+O pacote inclui funcionalidades básicas para manipulação de imagens, como:
 
-Redimensionamento de imagens
+- ✅ Redimensionamento de imagens
+- ✅ Conversão para escala de cinza
+- ✅ Detecção de bordas
+- ✅ Aplicação de filtros simples (ex: blur)
 
-Conversão para tons de cinza
+---
 
-Detecção de bordas
+## 📦 Instalação
 
-Aplicação de filtros simples
+Após a publicação no PyPI, o pacote poderá ser instalado com:
+
+```bash
+pip install imageprocessorpy
